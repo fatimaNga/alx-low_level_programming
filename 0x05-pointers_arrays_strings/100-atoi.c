@@ -5,7 +5,7 @@
  * @s: input string.
  * Return: integer.
  */
-int _atoi(char *s)
+int _atoi(char *dest, char *src)
 {
 	unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
 
@@ -21,7 +21,7 @@ int _atoi(char *s)
 		{
 			if (size > 0)
 				m *= 10;
-			size++;
+			size++
 		}
 		count++;
 	}
